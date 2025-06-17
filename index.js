@@ -1,4 +1,4 @@
-function asyncHandler(asyncFunction) {
+export default function asyncHandler(asyncFunction) {
   return function wrappedAsyncHandler(...args) {
     const out = asyncFunction(...args);
     const nextFunction = args[args.length - 1];
